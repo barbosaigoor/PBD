@@ -1,0 +1,27 @@
+{
+  "name": "pbd",
+  "version": "1.0.0",
+  "description": "PBD project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbosaigoor/PBD.git"
+  },
+  "keywords": [
+    "UFPEL"
+  ],
+  "author": "Igor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barbosaigoor/PBD/issues"
+  },
+  "homepage": "https://github.com/barbosaigoor/PBD#readme",
+  "dependencies": {
+    "electron": "^3.0.10",
+    "mysql": "^2.16.0"
+  }
+}
