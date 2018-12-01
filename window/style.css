@@ -1,3 +1,140 @@
-h1 {
-    color: red; 
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+#tool-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-right: 1px solid #DDD;
+    overflow: auto;
+    background-color: #fff;
+    justify-self: stretch;
+}
+
+#tool-bar .head {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 15px auto 40px auto;
+    border: 1px solid #DDD;
+    background-image: url(user.svg);
+}
+
+#tool-bar .menu-item {
+    /* width: 100%; */
+    display: block;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #DDD;
+    transition: letter-spacing ease-in-out 100ms;
+    cursor: pointer;
+}
+
+#tool-bar .menu-item:hover {
+    letter-spacing: 0.2rem;
+}
+
+section.content {
+    /* display: grid;
+    grid-template-columns: 350px auto; */
+    /* justify-content: space-around; */
+    padding: 50px;
+}
+
+div.container {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding: 30px 10px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+div.container form {
+    display: flex;
+    flex-flow: column;
+}
+
+input {
+    display: block;
+    padding: 3px;
+    margin: 5px 0;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #DDD;
+    background-color: #FFF;
+    box-shadow: none;
+}
+
+.end-space-bottom {
+    margin-bottom: 15px;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    min-width: 10px;
+    background-color: #fff;
+    border: 1px solid #DDD;
+    border-radius: 15px;
+    transition: background-color ease-in-out 200ms;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #DDD;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+}
+
+li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+#forms {
+}
+
+#list-render {
+}
+
+@media (max-width: 1000px) {
+    div.container {
+        width: 100%;
+    }
+
+    #list-render {
+    }
+}
+
+.selected {
+    background-color: #eee;
 }

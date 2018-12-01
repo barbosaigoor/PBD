@@ -7,7 +7,7 @@ class MysqlManager {
             host: 'localhost',
             user: 'root',
             password: 'sunday',
-            database: 'factory'
+            database: 'Factory'
         };
     }
 
